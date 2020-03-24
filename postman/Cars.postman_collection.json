@@ -1,0 +1,105 @@
+{
+	"info": {
+		"_postman_id": "d93fbff8-4d94-410e-b99d-a22a03cef502",
+		"name": "Cars",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Post Car",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "1731c56f-ed68-4e5a-8d6e-9548b32de9cf",
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/vnd.api+json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"data\": {\n\t\t\"type\":\"car\",\n\t\t\"attributes\":{\n\t\t\t\"make\":\"Chevy\",\n\t\t\t\"model\":\"Impala\",\n\t\t\t\"year\": 2001\n\t\t}\n\t}\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:7000/cars",
+					"host": [
+						"localhost"
+					],
+					"port": "7000",
+					"path": [
+						"cars"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Cars",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "1731c56f-ed68-4e5a-8d6e-9548b32de9cf",
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/vnd.api+json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"data\": {\n\t\t\"type\":\"car\",\n\t\t\"attributes\":{\n\t\t\t\"make\":\"Chevy\",\n\t\t\t\"model\":\"Impala\",\n\t\t\t\"year\": 2001\n\t\t}\n\t}\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:7000/cars",
+					"host": [
+						"localhost"
+					],
+					"port": "7000",
+					"path": [
+						"cars"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
