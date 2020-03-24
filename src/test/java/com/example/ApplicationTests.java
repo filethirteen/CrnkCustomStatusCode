@@ -1,10 +1,10 @@
-package com.axios.CustomCrnkStatusCodes;
+package com.example;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class CustomCrnkStatusCodesApplicationTests {
+class ApplicationTests {
 
 	@Test
 	void contextLoads() {
